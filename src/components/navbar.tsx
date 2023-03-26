@@ -6,15 +6,21 @@ const options = ["About me", "Skills", "Experiences"];
 
 function NavBar() {
   return (
-    <NavbarBootstrap collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <NavbarBootstrap
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+      sticky="top"
+    >
       <Container>
-        <NavbarBootstrap.Brand href="#home">Home</NavbarBootstrap.Brand>
+        <NavbarBootstrap.Brand href="#">Home</NavbarBootstrap.Brand>
         <NavbarBootstrap.Toggle aria-controls="responsive-navbar-nav" />
         <NavbarBootstrap.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {options.map((o) => (
-              <Nav.Link href={`#${o.split(" ")[0].toLowerCase()}`}>
-                {o}
+            {options.map((opt) => (
+              <Nav.Link href={`#${opt.split(" ")[0].toLowerCase()}`}>
+                {opt}
               </Nav.Link>
             ))}
           </Nav>
