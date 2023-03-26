@@ -1,17 +1,23 @@
+import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavbarBootstrap from "react-bootstrap/Navbar";
 
 const options = ["About me", "Skills", "Experiences"];
 
-function NavBar() {
+interface Props {
+  className?: string;
+}
+
+function NavBar(props: Props) {
   return (
     <NavbarBootstrap
       collapseOnSelect
       expand="lg"
       bg="dark"
       variant="dark"
-      sticky="top"
+      fixed="top"
+      className={props.className}
     >
       <Container>
         <NavbarBootstrap.Brand href="#">Home</NavbarBootstrap.Brand>
@@ -30,4 +36,7 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default styled(NavBar)`
+  font-size: 1.8rem !important;
+  background-color: rgb(8, 60, 60) !important;
+`;

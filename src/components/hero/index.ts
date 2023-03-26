@@ -3,7 +3,7 @@ import HeroSection from "./hero-section";
 
 export default styled(HeroSection)`
   background-color: rgb(8, 60, 60);
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 6.8rem 0 9.6rem 0;
   display: flex;
 
   .hero {
@@ -15,6 +15,21 @@ export default styled(HeroSection)`
     gap: 9.6rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    &-img-box {
+      width: 80%;
+      filter: brightness(105%);
+      opacity: 85%;
+      border-top-left-radius: 80px;
+      border-bottom-right-radius: 80px;
+    }
+
+    &-description {
+      font-size: 2rem;
+      line-height: 1.6;
+      margin-bottom: 4.4rem;
+      color: #adb5bd;
+    }
   }
   .heading-primary,
   .heading-secondary {
@@ -40,11 +55,5 @@ export default styled(HeroSection)`
     line-height: 1.6;
     color: #adb5bd;
     font-weight: 500;
-  }
-  .hero-description {
-    font-size: 2rem;
-    line-height: 1.6;
-    margin-bottom: 4.4rem;
-    color: #adb5bd;
   }
 `;
