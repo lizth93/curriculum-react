@@ -6,8 +6,6 @@ interface Props {
 }
 
 function Logo({ src, alt, title, text }: Props) {
-  console.log(src, "src");
-
   return (
     <div className="skills">
       <img className="skill-img" src={src} alt={alt} />
