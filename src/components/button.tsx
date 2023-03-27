@@ -1,11 +1,32 @@
 import ButtonBootstrap from "react-bootstrap/Button";
+import styled from "styled-components";
 
 interface Props {
   children: React.ReactNode;
+  className?: string;
 }
 
 function Button(props: Props) {
-  return <ButtonBootstrap variant="primary">{props.children}</ButtonBootstrap>;
+  return (
+    <ButtonBootstrap className={props.className} variant="primary">
+      {props.children}
+    </ButtonBootstrap>
+  );
 }
 
-export default Button;
+export default styled(Button)`
+  font-size: 2rem;
+  background-color: rgb(13, 122, 138);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 9px;
+  transition: all 0.5s;
+  font-weight: inherit;
+  border: none;
+  padding: 0.8rem 3.2rem;
+
+  &:hover {
+    background-color: #0c8599;
+    transform: translateY(-0.3rem);
+  }
+`;

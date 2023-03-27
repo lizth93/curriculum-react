@@ -25,7 +25,9 @@ export default function HeroSection(props: Props) {
             let me know!
           </p>
           <Button>Contact me</Button>
-          <Button>Learn More</Button>
+          <a href="#about" className="btn btn-learn ancla-element">
+            Learn more &darr;
+          </a>
         </div>
       </div>
     </section>

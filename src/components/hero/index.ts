@@ -8,20 +8,24 @@ export default styled(HeroSection)`
 
   .hero {
     max-width: 130rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
+    margin: 5rem auto;
+    padding: 0 4.2rem;
     display: grid;
 
-    gap: 9.6rem;
+    gap: 4.6rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    &-text-box {
+      text-align: start;
+    }
     &-img-box {
-      width: 80%;
+      width: 70%;
       filter: brightness(105%);
       opacity: 85%;
       border-top-left-radius: 80px;
       border-bottom-right-radius: 80px;
+      justify-self: center;
     }
 
     &-description {
@@ -55,5 +59,27 @@ export default styled(HeroSection)`
     line-height: 1.6;
     color: #adb5bd;
     font-weight: 500;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    transition: all 0.5s;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-learn {
+    color: rgb(101, 223, 243);
+
+    &:hover {
+      transform: translateY(-0.3rem);
+    }
   }
 `;
