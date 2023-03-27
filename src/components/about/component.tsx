@@ -3,7 +3,7 @@ import { Props } from "types";
 export default function AboutMe(props: Props) {
   return (
     <section className={props.className} id="about">
-      <div className="container">
+      <div className="personal-container">
         <span className="subheading">About me</span>
         <h2 className="heading-secondary">My personal objetive</h2>
         <p className="objective-description">

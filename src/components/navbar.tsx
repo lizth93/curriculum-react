@@ -43,7 +43,7 @@ export default styled(NavBar)`
   font-size: 1.8rem !important;
   background-color: rgb(8, 60, 60) !important;
   display: flex !important;
-  height: 8rem;
+  max-height: 8rem;
 
   .navbar-collapse {
     justify-content: right;
