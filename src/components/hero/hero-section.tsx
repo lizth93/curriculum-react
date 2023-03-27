@@ -1,9 +1,6 @@
 import photo from "img/my-photo.png";
+import { Props } from "types";
 import Button from "../button";
-
-interface Props {
-  className?: string;
-}
 
 export default function HeroSection(props: Props) {
   return (

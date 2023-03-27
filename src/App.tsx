@@ -3,14 +3,19 @@ import NavBar from "./components/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import HeroSection from "components/hero";
+import AboutMe from "components/about/";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <HeroSection />
-      <header className="App-header"></header>
-    </div>
+    <>
+      <header className="App">
+        <NavBar />
+      </header>
+      <main>
+        <HeroSection />
+        <AboutMe />
+      </main>
+    </>
   );
 }
 

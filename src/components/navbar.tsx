@@ -4,12 +4,9 @@ import Nav from "react-bootstrap/Nav";
 import NavbarBootstrap from "react-bootstrap/Navbar";
 import logo from "img/logo.png";
 import { Button } from "react-bootstrap";
+import { Props } from "types";
 
 const options = ["About me", "Skills", "Experiences"];
-
-interface Props {
-  className?: string;
-}
 
 function NavBar(props: Props) {
   return (
