@@ -3,7 +3,6 @@ import AboutMe from "./component";
 
 export default styled(AboutMe)`
   background-color: #131516;
-  padding: 6.8rem 0 9.6rem 0;
 
   .subheading {
     display: block;
