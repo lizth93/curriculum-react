@@ -50,6 +50,7 @@ export default styled(NavBar)`
 
   .navbar-collapse {
     justify-content: right;
+    background-color: rgb(8, 60, 60) !important;
   }
   .navbar-nav {
     gap: 4rem;
