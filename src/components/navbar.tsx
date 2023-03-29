@@ -45,14 +45,17 @@ export default styled(NavBar)`
   display: flex !important;
   max-height: 8rem;
 
-  .navbar-collapse {
-    justify-content: right;
-    background-color: rgb(8, 60, 60) !important;
+  .navbar {
+    &-collapse {
+      justify-content: right;
+      background-color: rgb(8, 60, 60) !important;
+    }
+    &-nav {
+      gap: 4rem;
+      font-weight: 600;
+    }
   }
-  .navbar-nav {
-    gap: 4rem;
-    font-weight: 600;
-  }
+
   .btn-contact {
     font-size: inherit;
     background-color: rgb(13, 122, 138);
