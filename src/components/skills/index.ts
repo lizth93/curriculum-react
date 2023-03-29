@@ -12,7 +12,7 @@ export default styled(Skills)`
     text-align: center;
   }
   .skill-img {
-    margin-bottom: 3.2rem;
+    margin-bottom: 1.2rem;
     width: 20%;
     transition: all 0.3s;
     border-radius: 100%;
