@@ -4,7 +4,7 @@ import Button from "../button";
 
 export default function HeroSection(props: Props) {
   return (
-    <section className={props.className}>
+    <section className={props.className} id="home">
       <div className="hero">
         <img src={photo} className="hero-img-box" alt="Luz Edith" />
 

@@ -25,7 +25,7 @@ function NavBar(props: Props) {
         <NavbarBootstrap.Toggle aria-controls="responsive-navbar-nav" />
         <NavbarBootstrap.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
             {options.map((opt) => (
               <Nav.Link href={`#${opt.split(" ")[0].toLowerCase()}`}>
                 {opt}
