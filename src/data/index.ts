@@ -49,4 +49,9 @@ export const skillsData = [
     name: "Postman",
     logo: "postman.svg",
   },
+  {
+    id: 11,
+    name: "Styled Components",
+    logo: "styled-component.svg",
+  },
 ];
