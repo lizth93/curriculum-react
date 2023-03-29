@@ -25,7 +25,7 @@ function NavBar(props: Props) {
         <NavbarBootstrap.Toggle aria-controls="responsive-navbar-nav" />
         <NavbarBootstrap.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
             {options.map((opt) => (
               <Nav.Link href={`#${opt.split(" ")[0].toLowerCase()}`}>
                 {opt}
@@ -43,16 +43,19 @@ export default styled(NavBar)`
   font-size: 1.8rem !important;
   background-color: rgb(8, 60, 60) !important;
   display: flex !important;
-  height: 8rem;
+  max-height: 8rem;
 
-  .navbar-collapse {
-    justify-content: right;
-    background-color: rgb(8, 60, 60) !important;
+  .navbar {
+    &-collapse {
+      justify-content: right;
+      background-color: rgb(8, 60, 60) !important;
+    }
+    &-nav {
+      gap: 4rem;
+      font-weight: 600;
+    }
   }
-  .navbar-nav {
-    gap: 4rem;
-    font-weight: 600;
-  }
+
   .btn-contact {
     font-size: inherit;
     background-color: rgb(13, 122, 138);

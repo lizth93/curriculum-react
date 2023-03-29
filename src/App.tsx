@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import HeroSection from "components/hero";
 import AboutMe from "components/about/";
+import Skills from "components/skills/";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <HeroSection />
         <AboutMe />
+        <Skills />
       </main>
     </>
   );
