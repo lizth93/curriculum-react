@@ -5,6 +5,7 @@ import "./App.css";
 import HeroSection from "components/hero";
 import AboutMe from "components/about/";
 import Skills from "components/skills/";
+import Education from "components/education/";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <HeroSection />
         <AboutMe />
         <Skills />
+        <Education />
       </main>
     </>
   );

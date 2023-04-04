@@ -1,8 +1,9 @@
+import { blackColor, textColor } from "components/helpers/constants";
 import styled from "styled-components";
 import Skills from "./component";
 
 export default styled(Skills)`
-  background-color: #131516;
+  background-color: ${blackColor};
 
   .grid--cols {
     text-align-last: center;
@@ -27,6 +28,6 @@ export default styled(Skills)`
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1.6rem;
-    color: #adb5bd;
+    color: ${textColor};
   }
 `;
