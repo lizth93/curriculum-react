@@ -4,6 +4,7 @@ import Skills from "./component";
 
 export default styled(Skills)`
   background-color: ${blackColor};
+  padding-bottom: 4rem;
 
   .grid--cols {
     text-align-last: center;

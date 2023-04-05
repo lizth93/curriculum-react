@@ -1,3 +1,4 @@
+import Accordion from "components/accordion/";
 import { education } from "data/education";
 import { Props } from "types";
 
@@ -39,25 +40,7 @@ export default function Education(props: Props) {
       </div>
 
       <h3 className="heading-secondary">Others Certifications</h3>
-
-      <div className="">
-        <p className="education-text-box">
-          <strong>{certifications[0].name}</strong>
-        </p>
-        {certifications.map((e, i) => (
-          <div className="grid--certifications" key={i}>
-            <img
-              src={`/logos/${certifications[0].logo}`}
-              className="education-img udemy-logo"
-              alt={certifications[0].altText}
-            />
-            <div className="elemt-1">
-              <p className="title-name">{e.period}</p>
-              <p className="title-name">{e.title}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Accordion certifications={certifications} />
     </section>
   );
 }
