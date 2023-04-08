@@ -1,4 +1,4 @@
-import { skillsData } from "data";
+import { skillsData } from "data/skills";
 import { Props } from "types";
 import Logo from "./logo";
 

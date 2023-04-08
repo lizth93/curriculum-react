@@ -4,11 +4,16 @@ import styled from "styled-components";
 interface Props {
   children: React.ReactNode;
   className?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 function Button(props: Props) {
   return (
-    <ButtonBootstrap className={props.className} variant="primary">
+    <ButtonBootstrap
+      className={props.className}
+      variant="primary"
+      onClick={props.onClick}
+    >
       {props.children}
     </ButtonBootstrap>
   );

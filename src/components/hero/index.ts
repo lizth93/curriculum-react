@@ -1,8 +1,13 @@
+import {
+  btnLearnMore,
+  principalColor,
+  textColor,
+} from "components/helpers/constants";
 import styled from "styled-components";
 import HeroSection from "./hero-section";
 
 export default styled(HeroSection)`
-  background-color: rgb(8, 60, 60);
+  background-color: ${principalColor};
   padding: 6.8rem 0 9.6rem 0;
   display: flex;
 
@@ -32,14 +37,14 @@ export default styled(HeroSection)`
       font-size: 2rem;
       line-height: 1.6;
       margin-bottom: 4.4rem;
-      color: #adb5bd;
+      color: ${textColor};
     }
   }
 
   .say-Hello {
     font-size: 2rem;
     line-height: 1.6;
-    color: #adb5bd;
+    color: ${textColor};
     font-weight: 500;
   }
 
@@ -58,7 +63,7 @@ export default styled(HeroSection)`
   }
 
   .btn-learn {
-    color: rgb(101, 223, 243);
+    color: ${btnLearnMore};
 
     &:hover {
       transform: translateY(-0.3rem);

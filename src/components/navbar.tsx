@@ -26,8 +26,8 @@ function NavBar(props: Props) {
         <NavbarBootstrap.Collapse id="responsive-navbar-nav">
           <Nav>
             <Nav.Link href="#home">Home</Nav.Link>
-            {options.map((opt) => (
-              <Nav.Link href={`#${opt.split(" ")[0].toLowerCase()}`}>
+            {options.map((opt, i) => (
+              <Nav.Link href={`#${opt.split(" ")[0].toLowerCase()}`} key={i}>
                 {opt}
               </Nav.Link>
             ))}
