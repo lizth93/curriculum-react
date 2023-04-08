@@ -14,6 +14,7 @@ import {
 
 export default styled(Contact)`
   background-color: ${blackColor};
+  padding-bottom: 6rem;
 
   .contact-text-box {
     background-color: ${colorContactAndButtons};
