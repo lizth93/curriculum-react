@@ -26,10 +26,6 @@ export default styled(Contact)`
     color: ${textLightColor};
   }
 
-  .grid {
-    row-gap: 6.2rem;
-    column-gap: 4.8rem;
-  }
   .grid--2--cols {
     grid-template-columns: 2fr 1fr;
   }
@@ -92,18 +88,18 @@ export default styled(Contact)`
 
   .link {
     text-decoration: none;
-  }
 
-  .link:link,
-  .link:visited {
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: ${textWhiteColor};
-    transition: all 0.3s;
-  }
-  .link:hover,
-  .link:active {
-    color: ${blueLight};
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: ${textWhiteColor};
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:active {
+      color: ${blueLight};
+    }
   }
 
   .contact-icon {
