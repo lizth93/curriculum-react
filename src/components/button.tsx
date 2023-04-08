@@ -4,6 +4,7 @@ import styled from "styled-components";
 interface Props {
   children: React.ReactNode;
   className?: string;
+  type?: "button" | "submit" | "reset" | undefined;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -13,6 +14,7 @@ function Button(props: Props) {
       className={props.className}
       variant="primary"
       onClick={props.onClick}
+      type={props.type ? props.type : "button"}
     >
       {props.children}
     </ButtonBootstrap>

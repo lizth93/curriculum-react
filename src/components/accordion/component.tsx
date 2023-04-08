@@ -21,7 +21,7 @@ function Accordion(props: Props) {
 
   return (
     <>
-      <AccordionBootstrap defaultActiveKey="-1" className={props.className}>
+      <AccordionBootstrap defaultActiveKey="0" className={props.className}>
         <AccordionBootstrap.Item eventKey="0">
           <AccordionBootstrap.Header>Certifications:</AccordionBootstrap.Header>
           <AccordionBootstrap.Body>
