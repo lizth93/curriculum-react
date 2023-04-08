@@ -2,11 +2,19 @@ import styled from "styled-components";
 import Contact from "./component";
 import {
   blackColor,
+  blueLight,
+  boxShadow,
+  boxShadowBtn,
   colorContactAndButtons,
+  darkPrincipalColor,
+  inputBackground,
+  textLightColor,
+  textWhiteColor,
 } from "components/helpers/constants";
 
 export default styled(Contact)`
   background-color: ${blackColor};
+  padding-bottom: 6rem;
 
   .contact-text-box {
     background-color: ${colorContactAndButtons};
@@ -16,11 +24,7 @@ export default styled(Contact)`
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.8;
-    color: #d8d4cf;
-  }
-
-  .style-white {
-    color: #fff;
+    color: ${textLightColor};
   }
 
   .grid--2--cols {
@@ -41,33 +45,38 @@ export default styled(Contact)`
     }
   }
 
+  address {
+    margin-bottom: 0rem;
+    align-self: flex-end;
+  }
+
   input {
     width: 100%;
     padding: 1.2rem;
     font-size: 1.8rem;
     font-family: inherit;
     border: none;
-    background-color: #e3fafc;
+    background-color: ${inputBackground};
     border-radius: 9px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-    color: #0b7285;
+    box-shadow: ${boxShadow};
+    color: ${blueLight};
   }
 
   .cta-form input::placeholder {
-    color: #0b7285;
+    color: ${blueLight};
   }
 
   .btn--form {
-    background-color: #0b7285;
-    color: #e3fafc;
+    background-color: ${darkPrincipalColor};
+    color: ${textWhiteColor};
     align-self: end;
     padding: 1.2rem;
 
     &:hover {
-      background-color: white;
-      color: #0b7285;
+      background-color: ${blackColor};
+      color: ${blueLight};
       transform: translateY(-0.3rem);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0, 0.2);
+      box-shadow: ${boxShadowBtn};
     }
   }
 
@@ -80,22 +89,22 @@ export default styled(Contact)`
 
   .link {
     text-decoration: none;
-  }
 
-  .link:link,
-  .link:visited {
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: #fff;
-    transition: all 0.3s;
-  }
-  .link:hover,
-  .link:active {
-    color: #555;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: ${textWhiteColor};
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:active {
+      color: ${blueLight};
+    }
   }
 
   .contact-icon {
-    fill: #333;
+    fill: ${textLightColor};
     height: 4.8rem;
     width: 4.8rem;
   }

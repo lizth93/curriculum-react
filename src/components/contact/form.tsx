@@ -2,7 +2,12 @@ import Button from "components/button";
 
 export default function Form() {
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form
+      className="contact-form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+    >
       <input type="hidden" name="form-name" value="contact" />
       <div>
         <label htmlFor="full-name">Tell me your name please(*)</label>
