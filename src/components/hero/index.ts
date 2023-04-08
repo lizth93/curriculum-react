@@ -1,5 +1,5 @@
 import {
-  btnLearnMore,
+  blueLight,
   principalColor,
   textColor,
 } from "components/helpers/constants";
@@ -63,7 +63,7 @@ export default styled(HeroSection)`
   }
 
   .btn-learn {
-    color: ${btnLearnMore};
+    color: ${blueLight};
 
     &:hover {
       transform: translateY(-0.3rem);

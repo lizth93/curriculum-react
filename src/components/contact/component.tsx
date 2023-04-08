@@ -17,19 +17,19 @@ export default function Contact(props: Props) {
             <address>
               <ul className="list-contact">
                 <li className="list-item">
-                  <IonIcon icon={locationOutline} />
+                  <IonIcon className="contact-icon" icon={locationOutline} />
                   <span>{contactInfo.country}</span>
                 </li>
 
                 <li className="list-item">
-                  <IonIcon icon={callOutline} />
+                  <IonIcon className="contact-icon" icon={callOutline} />
                   <a className="phone-link link" href="tel:3137036415">
                     {contactInfo.Tel}
                   </a>
                 </li>
 
                 <li className="list-item">
-                  <IonIcon icon={mailOutline} />
+                  <IonIcon className="contact-icon" icon={mailOutline} />
                   <a
                     className="contact-email link"
                     href="mailto:luz.tobarc@outlook.com"
