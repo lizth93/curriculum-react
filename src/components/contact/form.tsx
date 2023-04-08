@@ -7,8 +7,11 @@ export default function Form() {
       name="contact"
       method="POST"
       data-netlify="true"
+      netlify-honeypot="bot-field"
+      action=""
     >
       <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
       <div>
         <label htmlFor="full-name">Tell me your name please(*)</label>
         <input
