@@ -18,6 +18,24 @@ export const education = [
   },
 
   {
+    name: " Centro Colombiano de Estudios Profesionales",
+    altText: "Centro Colombiano de Estudios Profesionales logo",
+    logo: "cecep.svg",
+    period: "(2010-2013)",
+    title: "Systems technology",
+    type: "career",
+  },
+  {
+    name: " Moove it",
+    altText: "Moove it logo",
+    logo: "mooveIt.png",
+    period: "(2022)",
+    title: "Participation in the Bootcamp promoted by MooveIt",
+    type: "certification",
+    urlCertificate: "mooveIt.png",
+  },
+
+  {
     name: " Udemy - Virtual course",
     altText: "Udemy logo",
     logo: "Udemy.png",

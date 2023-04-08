@@ -23,9 +23,7 @@ function Accordion(props: Props) {
     <>
       <AccordionBootstrap defaultActiveKey="-1" className={props.className}>
         <AccordionBootstrap.Item eventKey="0">
-          <AccordionBootstrap.Header>
-            {props.certifications[0].name}
-          </AccordionBootstrap.Header>
+          <AccordionBootstrap.Header>Certifications:</AccordionBootstrap.Header>
           <AccordionBootstrap.Body>
             {props.certifications.map((element, i) => (
               <div className="grid--certifications" key={i}>
@@ -33,6 +31,7 @@ function Accordion(props: Props) {
                   src={`/logos/${element.logo}`}
                   className="education-img udemy-logo"
                   alt={element.altText}
+                  title={element.name}
                 />
                 <div className="elemt-1">
                   <p className="title-name">{element.period}</p>
