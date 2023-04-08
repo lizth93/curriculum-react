@@ -8,7 +8,7 @@ export default function Form() {
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
-      action=""
+      action="https://curriculum-luz-tobar.netlify.app/"
     >
       <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="bot-field" />
