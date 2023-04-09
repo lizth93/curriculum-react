@@ -12,9 +12,6 @@ function BackCard(props: Props) {
   return (
     <div className="card__side card__side--back card__side--back-1">
       <div className="card__cta">
-        <a href="#modal" className="btn btn-demo">
-          Demo
-        </a>
         <a href={props.project.gitHub} className="btn btn-demo" target="blank">
           View Code
         </a>
