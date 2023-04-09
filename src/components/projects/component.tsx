@@ -16,6 +16,15 @@ export default function Projects(props: Props) {
           </div>
         ))}
       </div>
+      <div className="more">
+        <a
+          href="https://www.linkedin.com/in/luz-edith-tobar/"
+          className="btn btn-project"
+          target="blank"
+        >
+          More Projects
+        </a>
+      </div>
     </section>
   );
 }
