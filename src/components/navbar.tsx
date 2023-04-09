@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavbarBootstrap from "react-bootstrap/Navbar";
 import logo from "img/logo.png";
-import { Button } from "react-bootstrap";
 import { Props } from "types";
 
 const options = ["About me", "Skills", "Experiences"];

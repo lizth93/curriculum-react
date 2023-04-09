@@ -1,10 +1,7 @@
 import {
   blueLight,
-  btnContactHover,
-  colorContactAndButtons,
   principalColor,
   textColor,
-  textLightColor,
 } from "components/helpers/constants";
 import styled from "styled-components";
 import HeroSection from "./hero-section";
