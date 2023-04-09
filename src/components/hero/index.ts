@@ -48,20 +48,6 @@ export default styled(HeroSection)`
     font-weight: 500;
   }
 
-  .btn,
-  .btn:link,
-  .btn:visited {
-    display: inline-block;
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    transition: all 0.5s;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-  }
-
   .btn-learn {
     color: ${blueLight};
 

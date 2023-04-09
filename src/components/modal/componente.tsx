@@ -2,11 +2,11 @@ import Button from "react-bootstrap/Button";
 import ModalBootstrap from "react-bootstrap/Modal";
 
 import { ModalProps } from "react-bootstrap";
-import { certifications } from "types";
+import { Certifications } from "types";
 import styled from "styled-components";
 
 interface MyModalProps extends ModalProps {
-  selectedcertification: certifications | null;
+  selectedcertification: Certifications | null;
 }
 
 function Modal(props: MyModalProps) {

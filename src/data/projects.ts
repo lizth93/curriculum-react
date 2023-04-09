@@ -1,0 +1,48 @@
+export const projects = [
+  {
+    name: "MemoBlock Game",
+    year: 2023,
+    status: "in progress",
+    tools: ["React", "TypeScript", "Redux", "Styled Components", "Bootstrap"],
+    url: "https://admirable-marshmallow-001604.netlify.app/",
+    img: "/projectsImg/Memoblock.png",
+    gitHub: "https://github.com/lizth93/games",
+  },
+  {
+    name: "Pelix",
+    year: 2022,
+    status: "Ended",
+    tools: [
+      "React",
+      "JavaScript",
+      "Redux",
+      "Styled Components",
+      "Bootstrap",
+      "Cypress",
+    ],
+    url: "https://pelix-luze.netlify.app/collections",
+    img: "/projectsImg/pelix.png",
+    gitHub: "https://github.com/lizth93/pelix",
+  },
+  {
+    name: "JetShop",
+    year: 2022,
+    status: "Ended",
+    tools: ["React", "JavaScript", "Redux", "Styled Components", "Firebase"],
+    url: "https://jet-shop-react.netlify.app/products/all",
+    urlJavascript: "https://jet-shop.netlify.app/",
+    img: "/projectsImg/jetShop.png",
+    gitHub: "https://github.com/lizth93/jet-shop-react",
+  },
+
+  {
+    name: "Stickers",
+    year: 2022,
+    status: "Ended",
+    tools: ["React", "JavaScript", "Css", "HTML", "localStorage"],
+    url: "https://sticker-react-app.netlify.app/",
+    urlJavascript: "https://stick-notes-luze.netlify.app/",
+    img: "/projectsImg/stickers.png",
+    gitHub: "https://github.com/lizth93/stick-todo-REACT",
+  },
+];

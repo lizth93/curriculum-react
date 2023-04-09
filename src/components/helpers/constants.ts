@@ -12,3 +12,4 @@ export const inputBackground = "rgb(7, 58, 63)";
 export const boxShadow = "0 1px 2px rgba(0, 0, 0, 0.07)";
 export const boxShadowBtn = "0 0.5rem 1rem rgba(0, 0, 0, 0, 0.2)";
 export const btnContactHover = "#0c8599";
+export const blueTextColor = "#0b7285";
