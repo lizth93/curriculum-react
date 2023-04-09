@@ -2,19 +2,19 @@ import { useState } from "react";
 import AccordionBootstrap from "react-bootstrap/Accordion";
 import Button from "../button";
 import Modal from "components/modal/componente";
-import { certifications } from "types";
+import { Certifications } from "types";
 
 interface Props {
   className?: string;
-  certifications: certifications[];
+  certifications: Certifications[];
 }
 
 function Accordion(props: Props) {
   const [modalShow, setModalShow] = useState(false);
   const [selectedCertification, setSelectedCertification] =
-    useState<certifications | null>(null);
+    useState<Certifications | null>(null);
 
-  const handleViewClick = (certification: certifications) => {
+  const handleViewClick = (certification: Certifications) => {
     setSelectedCertification(certification);
     setModalShow(true);
   };

@@ -5,7 +5,7 @@ import NavbarBootstrap from "react-bootstrap/Navbar";
 import logo from "img/logo.png";
 import { Props } from "types";
 
-const options = ["About me", "Skills", "Experiences"];
+const options = ["About me", "Skills", "Experiences", "Projects"];
 
 function NavBar(props: Props) {
   return (

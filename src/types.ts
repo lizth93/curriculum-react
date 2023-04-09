@@ -3,7 +3,7 @@ export interface Props {
   className?: string;
 }
 
-export interface certifications {
+export interface Certifications {
   name: string;
   altText: string;
   logo: string;
@@ -11,4 +11,15 @@ export interface certifications {
   title: string;
   type: string;
   urlCertificate?: string;
+}
+
+export interface Project {
+  name: string;
+  year: number;
+  status: string;
+  tools: string[];
+  url: string;
+  img: string;
+  urlJavascript?: string;
+  gitHub: string;
 }

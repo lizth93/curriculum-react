@@ -23,7 +23,7 @@ export default function HeroSection(props: Props) {
           <a href="#contact" className="btn-contact">
             Contact me
           </a>
-          <a href="#about" className="btn btn-learn ancla-element">
+          <a href="#about" className="btn btn-learn">
             Learn more &darr;
           </a>
         </div>

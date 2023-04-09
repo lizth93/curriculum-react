@@ -1,12 +1,22 @@
 import styled from "styled-components";
 import Projects from "./component";
-import { blackColor } from "components/helpers/constants";
+import {
+  blackColor,
+  blueLight,
+  colorContactAndButtons,
+  lessBlackColor,
+  textLightColor,
+  textWhiteColor,
+} from "components/helpers/constants";
+import { principalColor } from "components/helpers/constants";
 
 export default styled(Projects)`
   background-color: ${blackColor};
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+  }
 
   .card {
     perspective: 150rem;
@@ -15,6 +25,7 @@ export default styled(Projects)`
     position: relative;
     height: 53rem;
   }
+
   @media only screen and (max-width: 56.25em) {
     .card {
       max-width: 50rem;
@@ -26,6 +37,26 @@ export default styled(Projects)`
       margin: 0 3rem;
     }
   }
+
+  .btn-demo {
+    color: ${blueLight};
+
+    &:hover {
+      transform: translateY(-0.3rem);
+    }
+  }
+  .btn-project {
+    background-color: ${blueLight};
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    color: ${lessBlackColor};
+    &:hover {
+      transform: translateY(-0.3rem);
+      background-color: ${colorContactAndButtons};
+      color: ${textLightColor};
+    }
+  }
+
   .card__side {
     height: 53rem;
     transition: all 0.8s ease;
@@ -46,14 +77,9 @@ export default styled(Projects)`
     transform: rotateY(180deg);
   }
   .card__side--back-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+    background-image: linear-gradient(to right bottom, #0b7285, #087f5b);
   }
-  .card__side--back-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-  }
-  .card__side--back-3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
-  }
+
   .card:hover .card__side--front {
     transform: rotateY(-180deg);
   }
@@ -69,18 +95,7 @@ export default styled(Projects)`
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
-  .card__picture--1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-      url(../img/nat-5.jpg);
-  }
-  .card__picture--2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-      url(../img/nat-6.jpg);
-  }
-  .card__picture--3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-      url(../img/nat-7.jpg);
-  }
+
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -97,25 +112,12 @@ export default styled(Projects)`
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
-  .card__heading-span--1 {
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(255, 185, 0, 0.9),
-      rgba(255, 119, 48, 0.9)
-    );
-  }
-  .card__heading-span--2 {
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.9),
-      rgba(40, 180, 133, 0.9)
-    );
-  }
-  .card__heading-span--3 {
+
+  .card__heading-span {
     background-image: linear-gradient(
       to right bottom,
       rgba(41, 152, 255, 0.9),
-      rgba(86, 67, 250, 0.9)
+      ${principalColor}
     );
   }
   .card__details {
@@ -135,17 +137,19 @@ export default styled(Projects)`
     border-bottom: 1px solid #eee;
   }
   .card__cta {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 50%;
     text-align: center;
   }
   .card__price-box {
     text-align: center;
     margin-bottom: 8rem;
-    color: #fff;
+    color: ${textWhiteColor};
   }
   .card__price-only {
     font-size: font-size-text-card-back;
@@ -159,7 +163,7 @@ export default styled(Projects)`
     .card {
       height: auto;
       border-radius: 3px;
-      background-color: #fff;
+      background-color: ${textWhiteColor};
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     }
     .card__side {
@@ -175,6 +179,7 @@ export default styled(Projects)`
     .card:hover .card__side--front {
       transform: rotateY(0);
     }
+
     .card__details {
       padding: 1rem 3rem;
     }
