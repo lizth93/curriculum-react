@@ -1,6 +1,6 @@
 export const projects = [
   {
-    name: "MemoBlock Game",
+    name: "MemoBlock",
     year: 2023,
     status: "in progress",
     tools: ["React", "TypeScript", "Redux", "Styled Components", "Bootstrap"],

@@ -206,4 +206,9 @@ export default styled(Projects)`
       font-size: 4rem;
     }
   }
+
+  .more {
+    text-align: center;
+    margin-top: 4rem;
+  }
 `;

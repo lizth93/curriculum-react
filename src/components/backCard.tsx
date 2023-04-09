@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { Project } from "types";
 
 interface Props {
@@ -23,4 +22,4 @@ function BackCard(props: Props) {
   );
 }
 
-export default styled(BackCard)``;
+export default BackCard;
