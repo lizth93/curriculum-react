@@ -2,14 +2,7 @@ import Button from "components/button";
 
 export default function Form() {
   return (
-    <form
-      className="contact-form"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      action="https://curriculum-luz-tobar.netlify.app/"
-    >
+    <form className="contact-form" name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="bot-field" />
       <div>
