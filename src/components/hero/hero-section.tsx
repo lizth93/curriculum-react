@@ -1,6 +1,5 @@
 import photo from "img/my-photo.png";
 import { Props } from "types";
-import Button from "../button";
 
 export default function HeroSection(props: Props) {
   return (
@@ -21,7 +20,9 @@ export default function HeroSection(props: Props) {
             with JavaScript, React, CSS, Sass-SCSS, Bootstrap and HTML skills?
             let me know!
           </p>
-          <Button>Contact me</Button>
+          <a href="#contact" className="btn-contact">
+            Contact me
+          </a>
           <a href="#about" className="btn btn-learn ancla-element">
             Learn more &darr;
           </a>

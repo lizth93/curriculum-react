@@ -31,7 +31,9 @@ function NavBar(props: Props) {
                 {opt}
               </Nav.Link>
             ))}
-            <Button className="btn-contact">Contact</Button>
+            <a href="#contact" className="btn-contact">
+              Contact
+            </a>
           </Nav>
         </NavbarBootstrap.Collapse>
       </Container>
@@ -53,23 +55,6 @@ export default styled(NavBar)`
     &-nav {
       gap: 4rem;
       font-weight: 600;
-    }
-  }
-
-  .btn-contact {
-    font-size: inherit;
-    background-color: rgb(13, 122, 138);
-    display: inline-block;
-    text-decoration: none;
-    padding: 0 3.2rem;
-    border-radius: 9px;
-    transition: all 0.5s;
-    font-weight: inherit;
-    border: none;
-
-    &:hover {
-      background-color: #0c8599;
-      transform: translateY(-0.3rem);
     }
   }
 `;
