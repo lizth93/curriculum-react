@@ -10,4 +10,11 @@ export default styled(AboutMe)`
     line-height: 1.8;
     color: #d8d4cf;
   }
+
+  .personal-container {
+    @media only screen and (max-width: 28.125em) {
+      //450px
+      padding: 3.8rem 4rem 1.6rem 4rem;
+    }
+  }
 `;

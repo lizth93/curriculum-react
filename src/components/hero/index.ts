@@ -11,6 +11,16 @@ export default styled(HeroSection)`
   padding: 6.8rem 0 9.6rem 0;
   display: flex;
 
+  @media only screen and (max-width: 61.9em) {
+    //991 px
+    padding: 6.8rem 0 5.6rem 0;
+  }
+
+  @media only screen and (max-width: 61.9em) {
+    //560 px
+    padding: 4.8rem 0px 2.6rem;
+  }
+
   .hero {
     max-width: 130rem;
     margin: 5rem auto;
@@ -21,6 +31,16 @@ export default styled(HeroSection)`
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    @media only screen and (max-width: 62.5em) {
+      //1000 px
+      gap: 0rem;
+    }
+    @media only screen and (max-width: 61.9em) {
+      //991 px
+      display: flex;
+      flex-direction: column;
+    }
+
     &-text-box {
       text-align: start;
     }
@@ -28,9 +48,23 @@ export default styled(HeroSection)`
       width: 70%;
       filter: brightness(105%);
       opacity: 85%;
-      border-top-left-radius: 80px;
-      border-bottom-right-radius: 80px;
+      clip-path: polygon(
+        30% 0%,
+        70% 0%,
+        100% 30%,
+        100% 70%,
+        70% 100%,
+        30% 100%,
+        0% 70%,
+        0% 30%
+      );
+
       justify-self: center;
+
+      @media only screen and (max-width: 61.9em) {
+        //991 px
+        width: 45%;
+      }
     }
 
     &-description {

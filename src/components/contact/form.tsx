@@ -1,11 +1,17 @@
 import Button from "components/button";
+import styled from "styled-components";
+import { Props } from "types";
 
-export default function Form() {
+function Form(props: Props) {
   return (
-    <form className="contact-form" name="contact" method="post">
+    <form
+      className={`${props.className} contact-form`}
+      name="contact"
+      method="post"
+    >
       <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="bot-field" />
-      <div>
+      <div className="contact-fields">
         <label htmlFor="full-name">Tell me your name please(*)</label>
         <input
           id="full-name"
@@ -16,7 +22,7 @@ export default function Form() {
         />
       </div>
 
-      <div>
+      <div className="contact-fields">
         <label htmlFor="Subject">Tell me your subject (*)</label>
         <input
           id="subject"
@@ -27,7 +33,7 @@ export default function Form() {
         />
       </div>
 
-      <div>
+      <div className="contact-fields">
         <label htmlFor="message">Your message(*)</label>
         <input
           id="message"
@@ -43,3 +49,13 @@ export default function Form() {
     </form>
   );
 }
+
+export default styled(Form)`
+  .contact {
+    &-fields {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+`;

@@ -11,7 +11,7 @@ import { Props } from "types";
 export default function Footer(props: Props) {
   return (
     <footer className={props.className}>
-      <div className="container grid--5--cols">
+      <div className="container grid--4--cols">
         <a className="logo-footer" href="#home">
           <img src={logo} className="logo" alt="logo" />
         </a>

@@ -9,8 +9,8 @@ interface Props {
 
 function BackCard(props: Props) {
   return (
-    <div className="card__side card__side--back card__side--back-1">
-      <div className="card__cta">
+    <div className="card-side card-side--back card-side--back">
+      <div className="card-description">
         <a href={props.project.gitHub} className="btn btn-demo" target="blank">
           View Code
         </a>

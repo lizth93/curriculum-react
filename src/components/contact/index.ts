@@ -16,6 +16,13 @@ export default styled(Contact)`
   background-color: ${blackColor};
   padding-bottom: 6rem;
 
+  .container {
+    @media only screen and (max-width: 61.9em) {
+      /* 991 px */
+      max-width: 100%;
+    }
+  }
+
   .contact-text-box {
     background-color: ${colorContactAndButtons};
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
@@ -25,10 +32,21 @@ export default styled(Contact)`
     font-size: 1.8rem;
     line-height: 1.8;
     color: ${textLightColor};
+
+    @media only screen and (max-width: 28.125em) {
+      /* 450px */
+      padding: 2.8rem 2.4rem 2.4rem;
+    }
   }
 
   .grid--2--cols {
     grid-template-columns: 2fr 1fr;
+
+    @media only screen and (max-width: 61.9em) {
+      /* 991 px */
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .contact-form {
@@ -36,6 +54,12 @@ export default styled(Contact)`
     grid-template-columns: 1fr 1fr;
     column-gap: 3.2rem;
     row-gap: 2.4rem;
+
+    @media only screen and (max-width: 50em) {
+      /* 800 px */
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+    }
 
     & label {
       display: block;
@@ -48,6 +72,11 @@ export default styled(Contact)`
   address {
     margin-bottom: 0rem;
     align-self: flex-end;
+
+    @media only screen and (max-width: 55.875em) {
+      //894px
+      align-self: auto;
+    }
   }
 
   input {
@@ -72,6 +101,10 @@ export default styled(Contact)`
     align-self: end;
     padding: 1.2rem;
 
+    @media only screen and (max-width: 50em) {
+      /* 800 px */
+      margin-top: 5rem;
+    }
     &:hover {
       background-color: ${blackColor};
       color: ${blueLight};
@@ -85,6 +118,28 @@ export default styled(Contact)`
     flex-direction: column;
     justify-content: space-between;
     gap: 1.6rem;
+
+    @media only screen and (max-width: 65.25em) {
+      /* 1044 px */
+      padding-top: 2rem;
+      flex-direction: row;
+    }
+
+    @media only screen and (max-width: 61.9em) {
+      /* 991 px */
+      flex-direction: row;
+      flex-wrap: 1;
+    }
+
+    @media only screen and (max-width: 50em) {
+      /* 800 px */
+      display: block;
+    }
+
+    @media only screen and (max-width: 28.125em) {
+      /* 450px */
+      padding-top: 0rem;
+    }
   }
 
   .link {
@@ -115,5 +170,18 @@ export default styled(Contact)`
     align-items: center;
     gap: 1.6rem;
     line-height: 1.2;
+
+    @media only screen and (max-width: 55.875em) {
+      /* 894 px */
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 50em) {
+      /* 800 px */
+      display: flex;
+      flex-direction: initial;
+      column-gap: 4rem;
+    }
   }
 `;
