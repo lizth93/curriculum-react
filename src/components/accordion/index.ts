@@ -9,6 +9,23 @@ import {
 export default styled(Accordion)`
   .accordion-item {
     border: none;
+    max-height: 70rem;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #ffffff; /* thumb color, track color */
+
+    /* Estilos de scrollbar en Firefox */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000000;
+    }
   }
 
   .accordion-button {

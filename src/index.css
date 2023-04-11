@@ -26,6 +26,13 @@ html {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 61.9em) {
+  /* 560px */
+  html {
+    font-size: 50.5%;
+  }
+}
+
 .btn-contact {
   font-size: 2rem;
   background-color: rgb(13, 122, 138);

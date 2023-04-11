@@ -54,6 +54,11 @@ export default styled(NavBar)`
     &-nav {
       gap: 4rem;
       font-weight: 600;
+
+      @media only screen and (max-width: 62.5em) {
+        //1000 px
+        gap: 2rem;
+      }
     }
   }
 `;

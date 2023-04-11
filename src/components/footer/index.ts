@@ -8,11 +8,20 @@ export default styled(Footer)`
   text-align: center;
   padding: 4rem 0rem;
 
-  .grid--5--cols {
+  @media only screen and (max-width: 28.125em) {
+    /* 450px */
+    padding: 2rem 0rem;
+  }
+
+  .grid--4--cols {
     row-gap: 2rem;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     align-items: center;
+
+    @media only screen and (max-width: 35em) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .footer {
@@ -34,10 +43,21 @@ export default styled(Footer)`
     }
   }
 
+  .logo-footer {
+    @media only screen and (max-width: 35em) {
+      grid-column: span 5;
+      grid-row: 1;
+    }
+  }
   .copyrigth {
     font-size: 1.4rem;
     color: #767676;
     line-height: 1.6;
     grid-column: span 5;
+
+    @media only screen and (max-width: 28.125em) {
+      /* 450px */
+      font-size: 1.6rem;
+    }
   }
 `;

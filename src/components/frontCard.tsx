@@ -9,21 +9,21 @@ interface Props {
 
 export default function FrontCard(props: Props) {
   return (
-    <div className="card__side card__side--front">
+    <div className="card-side card-side--front">
       <div
-        className={`card__picture card__picture--${props.index}`}
+        className={`card-img card-img--${props.index}`}
         style={{
           backgroundImage: `linear-gradient(to right bottom, #0b7285, #087f5b), url(${props.project.img})`,
         }}
       >
         &nbsp;
       </div>
-      <h4 className="card__heading">
-        <span className="card__heading-span card__heading-span">
+      <h4 className="card-header">
+        <span className="card-header-span card-header-span">
           {props.project.name}
         </span>
       </h4>
-      <div className="card__details">
+      <div className="card-details">
         <ul>
           {props.project.tools.map((t, i) => (
             <li key={i}>{t}</li>
