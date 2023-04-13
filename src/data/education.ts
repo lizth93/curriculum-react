@@ -26,6 +26,15 @@ export const education = [
     type: "career",
   },
   {
+    name: " Coursera",
+    altText: "coursera it logo",
+    logo: "coursera.png",
+    period: "(2023)",
+    title: "Advanced React",
+    type: "certification",
+    urlCertificate: "coursera.png",
+  },
+  {
     name: " Moove it",
     altText: "Moove it logo",
     logo: "mooveIt.png",
