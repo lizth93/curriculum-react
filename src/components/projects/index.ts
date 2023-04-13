@@ -179,6 +179,13 @@ export default styled(Projects)`
         padding: 7rem 4rem 4rem 4rem;
       }
     }
+
+    .card:hover .card-side--front {
+      transform: none;
+    }
+    .card:hover .card-side--back {
+      transform: none;
+    }
   }
   @media only screen and (max-width: 56.25em) and (max-width: 20.18em),
     only screen and (hover: none) and (max-width: 20.18em) {
