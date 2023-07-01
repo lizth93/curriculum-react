@@ -32,7 +32,7 @@ export const education = [
     period: "(2023)",
     title: "Testing React with Jest and React Testing Library",
     type: "certification",
-    urlCertificate: "JestAndTestLibrary.png",
+    urlCertificate: "JestAndTestLibrary.jpg",
   },
   {
     name: " Coursera",
