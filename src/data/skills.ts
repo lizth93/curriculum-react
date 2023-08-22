@@ -54,4 +54,15 @@ export const skillsData = [
     name: "Styled Components",
     logo: "styled-component.svg",
   },
+  {
+    id: 12,
+    name: "Jest",
+    logo: "Jest.png",
+  },
+  {
+    id: 13,
+    name: "Testing Library",
+    logo: "Testing-library.png",
+  },
+
 ];
