@@ -142,4 +142,13 @@ export const education = [
     type: "certification",
     urlCertificate: "Asp.NetCore-TheCompleteGuideToBuildRestfulApis.jpg",
   },
+  {
+    name: " Udemy - Virtual course",
+    altText: "Udemy logo",
+    logo: "Udemy.png",
+    period: "(2023)",
+    title: "React Query / TanSack Query: React Server State Management",
+    type: "certification",
+    urlCertificate: "ReactQuery.jpg",
+  },
 ];
