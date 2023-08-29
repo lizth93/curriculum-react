@@ -64,5 +64,10 @@ export const skillsData = [
     name: "Testing Library",
     logo: "Testing-library.png",
   },
+  {
+    id: 14,
+    name: "Docker",
+    logo: "Docker.png",
+  },
 
 ];

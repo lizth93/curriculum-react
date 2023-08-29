@@ -151,4 +151,13 @@ export const education = [
     type: "certification",
     urlCertificate: "ReactQuery.jpg",
   },
+   {
+    name: " Udemy - Virtual course",
+    altText: "Udemy logo",
+    logo: "Udemy.png",
+    period: "(2023)",
+    title: "Docker for the Absolute Beginner - Hands On - DevOps",
+    type: "certification",
+    urlCertificate: "Docker.jpg",
+  },
 ];
