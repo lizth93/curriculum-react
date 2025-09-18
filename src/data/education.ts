@@ -160,4 +160,22 @@ export const education = [
     type: "certification",
     urlCertificate: "Docker.jpg",
   },
+  {
+    name: "Intermediate Level in Talking English Course",
+    altText: "Intermediate Level in Talking English Course logo",
+    logo: "noLogo.png",
+    period: "(2023)",
+    title: "Intermediate Level in Talking English Course",
+    type: "certification",
+    urlCertificate: "IntermediateEnglish.jpg",
+  },
+  {
+    name: "Udemy - Virtual course",
+    altText: "Udemy logo",
+    logo: "Udemy.png",
+    period: "(2025)",
+    title: "Microfrontends with React: A complete Developer's Guide",
+    type: "certification",
+    urlCertificate: "MicrofrontendsWithReact.jpg",
+  },
 ];
